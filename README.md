@@ -22,16 +22,16 @@ https://er-priyanka.github.io/saraltech-frontend/
 
 
 ## Screenshots
-** Home **
+**Home**
 ![home](asset/Home.png)
 
-** Contact section **
+**Contact section**
 ![home](asset/contact.png)
 
-** Responsive Home **
+**Responsive Home**
 ![home](asset/responsive_home.png)
 
-** Responsive Contact **
+**Responsive Contact**
 ![home](asset/responsive_contact.png)
 
 
