@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 3%;
     /* border: 1px solid ; */
     background-color: rgb(121, 135, 159);
     position: sticky;
@@ -43,6 +43,51 @@ nav ul{
 nav ul a{
     color: white;
     /* background-color: gray; */
+}
+
+main{
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.heading_tag{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: rgb(79, 77, 77);
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#container > div{
+    display: flex;
+}
+
+#container>div>div{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#container h1{
+    font-size: 5rem;
+    color: gray;
+}
+
+#container p{
+    color: gray;
+}
+
+#container img{
+    width: 100%;
 }
 
 footer{

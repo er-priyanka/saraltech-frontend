@@ -9,9 +9,9 @@
 <body>
     
     <header>
-        <Box>
+        <div>
             <h1 id="app_title">Saral<span>Tech</span></h1>
-        </Box>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -22,7 +22,14 @@
     </header>
 
     <main>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, dignissimos, voluptatibus expedita saepe deleniti veniam facilis eaque a, excepturi ratione beatae quidem! Aut incidunt eligendi quasi earum minus id ad.</p>
+        <div>
+            <h1 class="heading_tag">About Us</h1>
+            <div id="container" >
+                <!-- append about us container data here -->
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
@@ -31,3 +38,65 @@
 
 </body>
 </html>
+
+<script>
+    let container = document.getElementById('container');
+
+    let data = [
+        {
+            title: "20+",
+            subtitle: "Portfolio Projects",
+            image_url: "./Images/images.jpg"
+        },
+        {
+            title: "100+",
+            subtitle: "Navigation CAC",
+            image_url: "./Images/customer.jpg"
+        },
+        {
+            title: "1000+",
+            subtitle:"Projects Delivered",
+            image_url: "./Images/image2.jpg"
+        }
+    ]
+
+
+    function appendData(){
+        container.innerHTML = null;
+
+        data.map((el, indx)=>{
+            let box = document.createElement('div');
+            
+            let imageBox = document.createElement('div');
+
+            let textBox = document.createElement('div');
+
+            let image = document.createElement('img');
+            image.setAttribute('src', el.image_url);
+            
+            let title = document.createElement('h1');
+            title.innerText = el.title;
+
+            let subtitle = document.createElement('p');
+            subtitle.innerText = el.subtitle;
+
+            imageBox.append(image);
+            textBox.append(title, subtitle);
+
+            if(indx%2==0){
+                box.append(imageBox, textBox);
+                
+                
+            }else{
+                
+                box.append(textBox, imageBox);
+                
+            }
+            
+            container.append(box);
+        })
+    }
+
+    appendData();
+    
+</script>
