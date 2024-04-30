@@ -182,3 +182,25 @@ footer{
     background-color: rgb(40, 37, 37);
     color: rgba(239, 237, 237, 0.6);
 }
+
+
+/* responsive design style */
+
+/* for small screen */
+@media all and (max-width: 768px){
+    header{
+        flex-direction:column;
+    }
+
+    #contact_us{
+        flex-direction: column;
+    }
+
+    #contact_us > div:nth-child(3){
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
+
