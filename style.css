@@ -190,6 +190,11 @@ footer{
         flex-direction:column;
     }
 
+    #container h1{
+        font-size: 3rem;
+        color: gray;
+    }
+
     #contact_us{
         flex-direction: column;
     }
