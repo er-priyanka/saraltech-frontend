@@ -15,6 +15,7 @@ body{
 header{
     width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     padding: 10px 3%;
@@ -22,6 +23,8 @@ header{
     background-color: rgb(121, 135, 159);
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
 }
 
 #app_title{
