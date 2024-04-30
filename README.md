@@ -19,3 +19,19 @@ https://er-priyanka.github.io/saraltech-frontend/
 
 4. *Responsiveness*
     - Added responsiveness to the webpage
+
+
+## Screenshots
+** Home **
+![home](asset/Home.png)
+
+** Contact section **
+![home](asset/contact.png)
+
+** Responsive Home **
+![home](asset/responsive_home.png)
+
+** Responsive Contact **
+![home](asset/responsive_contact.png)
+
+
