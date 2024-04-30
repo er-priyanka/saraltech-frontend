@@ -12,6 +12,7 @@ body{
 }
 
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,6 +99,8 @@ main{
 }
 
 #contact_container > p{
+    width: 80%;
+    margin: auto;
     text-align: center;
     color: rgb(94, 92, 92);
 }
